@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Books Online</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+    		background-color: #000080;
+    		color: white;
+    		padding: 20px;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		gap: 15px; /* Adds spacing between logo and title */
+	}
+
+	header img {
+    		width: 80px; /* Adjust logo size */
+    		height: auto;
+	}
+
+		header h1 {
+    margin: 0;
+    		font-size: 28px; /* Adjust font size for better balance */
+	}
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .search-box {
+            margin: 20px 0;
+        }
+        .search-box input {
+            padding: 10px;
+            width: 300px;
+        }
+        .search-box button {
+            padding: 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .section {
+            margin: 40px 0;
+        }
+.section-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.section-card {
+    width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-card:hover {
+    transform: scale(1.05);
+    background-color: #e0e0e0;
+}
+       
+
+ {
+            width: 80%;
+            height: 200px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            font-size: 18px;
+            color: #555;
+        }
+        footer {
+            background-color: #000080;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="IBO_logo.WEBP" alt="Independent Books Online Logo" width="100">
+    <h1>Independent Books Online</h1>
+</header>
+
+<nav>
+    <a href="#ebooks">eBooks</a>
+    <a href="#print-books">Print Books</a>
+    <a href="#audio-books">Audiobooks</a>
+</nav>
+
+<div class="search-box">
+  <form action="index.php" method="GET">    
+	<input type="text" placeholder="Search by title or author...">
+    	<button>Search</button>
+  </form>
+</div>
+
+<img src="bookshelf.png" alt="Library">
+
+<div class="section-container">
+    <div class="section-card" onclick="location.href='#ebooks'">
+        <img src="ebooks.jfif" alt="eBooks">
+        <h2>eBooks</h2>
+        <p>Explore our wide range of digital books available for instant download.</p>
+    </div>
+    <div class="section-card" onclick="location.href='#audio-books'">
+        <img src="headphone.jfif" alt="Audiobooks">
+        <h2>Audiobooks</h2>
+        <p>Listen to your favorite books on the go with our audiobook selection.</p>
+    </div>
+    <div class="section-card" onclick="location.href='#print-books'">
+        <img src="booksbymail.jfif" alt="Print and mail books">
+        <h2><br>Books Mailed to You</h2>
+        <p><br>Browse our collection of print books, shipped straight to your door.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Independent Books Online. All rights reserved. (John MacDonald's Test Project)</p>
+</footer>
+
+</body>
+</html>
